@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load posts_url_tags %}
+{% get_posts as posts %}
+
+{% block content %}
+
+{% include "include/about.html" %}
+
+{% include "include/blog.html" %}
+
+<!-- {% include "include/clients.html" %}  -->
+
+{% include "include/contact.html" %}
+
+{% include "include/service.html" %}
+
+{% include "include/skill.html" %}
+
+
+{% include "include/social.html" %}
+
+{% include "include/story.html" %}
+
+{% include "include/testimonials.html" %}
+
+{% endblock content %}
